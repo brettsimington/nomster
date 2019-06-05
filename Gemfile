@@ -76,5 +76,5 @@ gem 'will_paginate-bootstrap'
 #this is needed to add bootsrap style to pagination
 
 gem 'simple_form'
-
 gem "font-awesome-rails"
+gem 'devise'
