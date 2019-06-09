@@ -18,6 +18,12 @@ ActiveRecord::Schema.define(version: 2019_06_09_193405) do
   create_table "comments", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text     "message", null: true
+    t.string   "rating"
+    t.integer  "user_id"
+    t.integer  "place_id"
+    t.index ["place_id"], name: "index_comments_on_place_id", using: :btree
+    t.index ["user_id", "place_id"], name: "index_comments_on_user_id_and_place_id", using: :btree
   end
 
   create_table "places", force: :cascade do |t|
