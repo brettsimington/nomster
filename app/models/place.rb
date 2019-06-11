@@ -6,4 +6,6 @@ class Place < ApplicationRecord
   validates :name, presence: true, length: { minimum: 3, too_long: "%{count} characters is the minimum allowed!" }
   validates :address, presence: true
   validates :description, presence: true
+  validates :caption, presence: true
+ # validates :place_id, true
 end
