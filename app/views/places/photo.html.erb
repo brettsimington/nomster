@@ -1,5 +1,5 @@
-<%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
+<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
   <%= f.input :picture %>
   <%= f.input :caption %>
-  <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+  <%= f.submit "Add a picture", class: 'btn btn-primary' %>
 <% end %>
