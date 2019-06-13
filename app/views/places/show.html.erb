@@ -72,14 +72,16 @@
 </button>
 </div>
 
-
-
 <h1>Photos</h1>
 <% if @place.photos %>
 <% @place.photos.each do |photo| %>
+  <div class="col-12 col-sm-6">>
+    <blockquote>
   <%= image_tag photo.picture.url %>
   <%= photo.caption %>
   <% end %>
+  </blockquote>
 <% end %>
 </div> 
+
 <div class="clear"></div>
