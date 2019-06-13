@@ -8,5 +8,5 @@ class Place < ApplicationRecord
   validates :description, presence: true
   validates :caption, presence: true
   validates :place_id, presence: true
-  has_many :photo
+  has_many :photos
 end

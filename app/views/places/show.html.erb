@@ -75,8 +75,8 @@
 
 
 <h1>Photos</h1>
-<% if @place.photo %>
-<% @place.photo.each do |photo| %>
+<% if @place.photos %>
+<% @place.photos.each do |photo| %>
   <%= image_tag photo.picture.url %>
   <%= photo.caption %>
   <% end %>
