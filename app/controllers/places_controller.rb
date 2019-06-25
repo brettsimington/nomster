@@ -58,12 +58,12 @@ end
 private
 
 def place_params
-  params.require(:place).permit(:name, :description, :address)
+  params.require(:place).permit(:name, :description, :address, :picture, :caption)
 end 
 
-def photo_params
-  params.require(:photo).permit(:picture, :caption)
-end
+#def photo_params
+#  params.require(:photo).permit(:picture, :caption)
+#end
 
 
 end
